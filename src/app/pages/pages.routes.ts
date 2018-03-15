@@ -6,12 +6,14 @@ import { PagesComponent } from "./pages.component";
 import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
 import { PromesasComponent } from "./promesas/promesas.component";
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { LoginGuardGuard } from "../services/service.index";
 
 
 const pagesRoute: Routes = [
     {
       path: '',
       component: PagesComponent,
+      canActivate: [ LoginGuardGuard ],
       children: [
         { path: 'dashboard', component: DashboardComponent, data: { titulo: 'Dashboard'} },
         { path: 'progress', component: ProgressComponent, data: { titulo: 'ProgressBars'}},
