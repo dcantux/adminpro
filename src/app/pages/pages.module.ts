@@ -20,9 +20,16 @@ import { AccoutSettingsComponent } from './accout-settings/accout-settings.compo
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 
+import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
+
 //Pipes modulos
 import { PipesModule } from '../pipes/pipes.module';
 import { ProfileComponent } from './profile/profile.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+
+
+
+ModalUploadComponent
 
 
 @NgModule({
@@ -36,7 +43,9 @@ import { ProfileComponent } from './profile/profile.component';
         AccoutSettingsComponent,
         PromesasComponent,
         RxjsComponent,
-        ProfileComponent
+        ProfileComponent,
+        UsuariosComponent,
+        ModalUploadComponent
     ],
 
     imports: [
